@@ -1,6 +1,10 @@
 {
   "name": "pollen-solutions/skeleton",
   "description": "Pollen Solution Standalone project skeleton.",
+  "keywords": [
+    "boilerplate",
+    "wordpress"
+  ],
   "type": "project",
   "license": "MIT",
   "time": "2021-06-21",
@@ -17,7 +21,7 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
+    "php": "^7.4 || ^8.0",
     "pollen-solutions/debug": "^1.0",
     "pollen-solutions/kernel": "^1.0",
     "vlucas/phpdotenv": "^5.3"
