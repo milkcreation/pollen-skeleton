@@ -15,6 +15,7 @@ class DebugServiceProvider extends BootableServiceProvider
      */
     public function boot(): void
     {
+        /** @var DebugManagerInterface $debug */
         $debug = $this->getContainer()->get(DebugManagerInterface::class);
 
         if (Env::inDev()) {

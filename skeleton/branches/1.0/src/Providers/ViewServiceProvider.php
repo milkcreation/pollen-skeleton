@@ -17,11 +17,11 @@ class ViewServiceProvider extends BootableServiceProvider
     {
         /** @var ViewManagerInterface $view */
         $view = $this->getContainer()->get(ViewManagerInterface::class);
-        $cache = !Env::inDev();
 
         $view
-            ->setDefaultEngine('twig')
+            // Use plates|twig as view engine
+            ->setDefaultEngine('plates')
             ->setDirectory(dirname(__DIR__, 2) . '/resources/views')
-            ->setCacheDir($cache ? dirname(__DIR__, 2) . "/var/cache/views": null);
+            ->setCacheDir(!Env::inDev() ? dirname(__DIR__, 2) . "/var/cache/views": null);
     }
 }
