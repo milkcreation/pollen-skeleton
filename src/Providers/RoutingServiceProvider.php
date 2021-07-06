@@ -17,6 +17,7 @@ class RoutingServiceProvider extends BootableServiceProvider
      */
     public function boot(): void
     {
+        /** @var RouterInterface $router */
         $router = $this->getContainer()->get(RouterInterface::class);
 
         $router->get(
@@ -24,7 +25,7 @@ class RoutingServiceProvider extends BootableServiceProvider
             function () {
                 $this->asset()->enqueueTitle('Welcome');
 
-                return view('index');
+                return view('index', ['name' => 'John Doe']);
             }
         );
     }
