@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-composer create-project -s dev --repository-url https://composer.presstify.com/pollen-solutions pollen-solutions/skeleton httpdocs
+composer create-project -s dev --repository-url https://composer.presstify.com/pollen-solutions pollen-solutions/skeleton htdocs
 ```
 
 ## Configuration

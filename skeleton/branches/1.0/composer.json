@@ -23,6 +23,7 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "ext-json": "*",
+    "composer/installers": "^1.11",
     "pollen-solutions/asset": "1.0.x-dev",
     "pollen-solutions/debug": "^1.0",
     "pollen-solutions/kernel": "^1.0",

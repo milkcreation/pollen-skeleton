@@ -4,7 +4,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <?php echo $this->asset_head(); ?>
 </head>

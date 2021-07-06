@@ -22,6 +22,6 @@ class ViewServiceProvider extends BootableServiceProvider
             // Use plates|twig as view engine
             ->setDefaultEngine('plates')
             ->setDirectory(dirname(__DIR__, 2) . '/resources/views')
-            ->setCacheDir(!Env::inDev() ? dirname(__DIR__, 2) . "/var/cache/views": null);
+            ->setCacheDir(!Env::inDev() ? dirname(__DIR__, 2) . '/var/cache/views' : null);
     }
 }
