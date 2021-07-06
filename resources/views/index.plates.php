@@ -1,15 +1,15 @@
 <?php
 /**
- * @var Pollen\View\ViewLoaderInterface $this
+ * @var Pollen\ViewExtends\PlatesTemplateInterface $this
  */
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title><?php echo $this->get('title'); ?></title>
+    <?php echo $this->asset_head(); ?>
 </head>
 <body>
 <h1>Welcome <?php echo $this->get('name'); ?> From Plates</h1>
+<?php echo $this->asset_footer(); ?>
 </body>
 </html>
